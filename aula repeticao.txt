@@ -1,0 +1,14 @@
+//codicao no inicio while
+inicialozacao da variavel
+while(condicao){
+instrucao;
+acao incremento e decremento da variavel;
+}
+
+//condicao no fim do while
+inicialozacao da variavel
+do{
+instrucao;
+acao incremento e decremento da variavel;
+}
+while(condicao);

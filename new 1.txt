@@ -1,0 +1,13 @@
+1. coloque o nome da classe utilizando as regras que aprendeu
+
+2. cria um metodo menu, colocando todas tarefas do menu e contadores e acumuladores, de seguida chame o metodo menu no main
+
+3. faca o calculo do valor a pagar dentro de um unico metodo e chame onde necessario
+
+4. visualiza os dados do programador dentro do metodo e chame onde necessario
+
+5. em vez de calcular o valor total varias vezes, calcule uma unica vez dentro do metodo, e envie para os metodos que precisam do valor
+
+6. as despesas nao sao constantes. calcule dentro do metodo as despesas e devolva aonde vai precisar.
+
+//7. nao podemos passar p opcao 2 3 por ai em diante sem executar opcao 1. faca esse controle.
