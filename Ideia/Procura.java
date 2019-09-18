@@ -54,19 +54,18 @@ public class Procura {
         return indice;
     }
 
-    //metodo para procurar evento por categoria
-    public void procurarCategoria(Vector e) {
-        char x = ' ';
-        Evento ev;
+    //**Defesa**//metodo para procurar evento pelo codigo
+    public void procurar(Vector e) {
+        Visualizacoes v = new Visualizacoes();
+        byte x = 0;
         Validacoes vn = new Validacoes();
-        x = vn.ValidarCategoria("Escolha a categoria: (F - Festa, M - Musica, A - Artes e G - Gastronomia)");
+        x = vn.ValidarByte((byte) 1, (byte) (e.size()), "Digite o codigo do evento (1 - " + e.size() + ")");
+        Evento ev = (Evento) e.elementAt(x);
+        if (ev.getCodigo() != x) {
 
-        for (byte i = 0; i < e.size(); i++) {
-            ev = (Evento) e.elementAt(i);
-            if (ev.getCategoria() == x) {
-                Visualizacoes v = new Visualizacoes();
-                v.visualizarVectorCriterio(e, i, "Evento da categoria selecionada: ");
-            }
+            v.visualizarVectorCriterio(e, (byte) (x - 1), "Evento encontrado: ");
+        } else {
+            v.visualizar("Evento nao encontrado.");
         }
     }
 

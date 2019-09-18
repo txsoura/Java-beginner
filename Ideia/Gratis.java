@@ -11,6 +11,8 @@ public final class Gratis extends Evento {
     public Gratis(byte codigo, String nome, String local, String data, String hora, char categoria, char tipo, int lotacao) {
         super(codigo, nome, local, data, hora, categoria, tipo);
         this.lotacao = lotacao;
+        //**Defesa**//incrementar variaveis estaticas no lugar correcto
+        cont++;
         df = new DecimalFormat("#####0 pessoas");
     }
 

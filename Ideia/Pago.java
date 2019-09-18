@@ -40,18 +40,16 @@ public abstract class Pago extends Evento implements Bilhetes {
         return preco;
     }
 
+    //**Defesa**//metodo abstracto que acumular o total
     public double calcularTotal() {
-        double total = 0;
-        total = bilhete * preco;
-
-        return total;
+        Calculos c = new Calculos();
+        return c.total(bilhete, preco);
     }
 
+    //**Defesa**//metodo abstracto acumular bilhetes
     public int calcularBilhetes() {
-        int total = 0;
-        total += bilhete;
-
-        return total;
+        Calculos c = new Calculos();
+        return c.bilhetes(bilhete);
     }
 
     @Override

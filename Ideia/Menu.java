@@ -32,12 +32,13 @@ public class Menu {
         byte opc = 0;
         boolean p = false;
         do {
-            opc = (byte) vn.ValidarByte((byte) 1, (byte) 15, "======== Ideia Eventos ========\n1. Ler Ficheiro de Entrada\n2. Visualizar Eventos\n3. Visualizar o Total Arrecadado\n4. Visualizar Numero de Eventos por Tipo (Pago ou Gratis)\n5. Visualizar o Total de Bilhetes\n6. Evento mais caro\n7. Evento com menor numero de bilhetes\n8. Procurar evento por categoria\n9. Editar evento\n10. Ordenar eventos por precos\n11. Gravar dados no ficheiro de objectos\n12. Remover Evento\n13. Adicionar Evento\n14. Informacoes do Programador\n15. Sair");
+            opc = (byte) vn.ValidarByte((byte) 1, (byte) 15, "======== Ideia Eventos ========\n1. Ler Ficheiro de Entrada\n2. Visualizar Eventos\n3. Visualizar o Total Arrecadado\n4. Visualizar Numero de Eventos por Tipo (Pago ou Gratis)\n5. Visualizar o Total de Bilhetes\n6. Evento mais caro\n7. Evento com menor numero de bilhetes\n8. Procurar evento\n9. Editar evento\n10. Ordenar eventos por precos\n11. Gravar dados no ficheiro de objectos\n12. Remover Evento\n13. Adicionar Evento\n14. Informacoes do Programador\n15. Sair");
 
             switch (opc) {
                 //opcao 1
                 case 1: {
-                    t.adaptadorLerTxt(entrada);
+                    //**Defesa**//chamar o metodo le o ficheiro de texto e grava no vector
+                    t.lerTxt(entrada);
                     p = true;
                 }
                 break;
@@ -92,7 +93,8 @@ public class Menu {
                 //opcao 8
                 case 8:
                     if (p == true) {
-                        t.adaptadorProcuraCategorias();
+                        //**Defesa**//chamr adaptador do metodo que procura evento pelo codigo
+                        t.adaptadorProcura();
                     } else {
                         t.adaptadorVisualizar(erro);
                     }

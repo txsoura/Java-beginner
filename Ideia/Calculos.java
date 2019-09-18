@@ -16,6 +16,22 @@ public class Calculos {
     public Calculos() {
     }
 
+    //**Defesa**//metodo para acumular o total 
+    public double total(int bilhete, double preco) {
+        double total = 0;
+        total = bilhete * preco;
+
+        return total;
+    }
+
+    //**Defesa**//metodo para acumular bilhetes
+    public int bilhetes(int bilhete) {
+        int total = 0;
+        total += bilhete;
+
+        return total;
+    }
+
     //metodo para calcular o numero total de bilhetes
     public int CalcularBilhetes(Vector e) {
         int total = 0;

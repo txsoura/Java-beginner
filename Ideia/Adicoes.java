@@ -21,7 +21,6 @@ public class Adicoes {
         g.setLotacao(lotacao);
 
         e.addElement(g);
-        Gratis.cont++;
         e.trimToSize();
         return e;
     }
@@ -41,7 +40,6 @@ public class Adicoes {
         n.setConsumo(consumo);
 
         e.addElement(n);
-        Normal.cont++;
         e.trimToSize();
         return e;
     }
@@ -61,7 +59,6 @@ public class Adicoes {
         v.setRegalia(regalia);
 
         e.addElement(v);
-        Vip.cont++;
         e.trimToSize();
         return e;
     }

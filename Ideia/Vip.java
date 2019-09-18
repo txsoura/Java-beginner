@@ -8,6 +8,8 @@ public final class Vip extends Pago {
     public Vip(byte codigo, String nome, String local, String data, String hora, char categoria, char tipo, int bilhete, double preco, String regalia) {
         super(codigo, nome, local, data, hora, categoria, tipo, bilhete, preco);
         this.regalia = regalia;
+        //**Defesa**//incrementar variaveis estaticas no lugar correcto
+        cont++;
     }
 
     public Vip() {
